@@ -17,12 +17,16 @@ const Game = () => {
 
   const handleResetGame = () => {
     setBoard(Array(9).fill(null));
+    setXIsNext(true);
   };
   return (
     <>
       <div className="game">
-        <h1 className="game__title">Project Game Tic Tac Toe by ReactJS</h1>
+        <h1 className="game__title">
+          Project Game Tic Tac Toe <br /> by ReactJS
+        </h1>
         <Board cells={board} onClick={handleClick} />
+        <div className="game__winner">{winner ? `Winner is ${winner}` : ''}</div>
         <button onClick={handleResetGame} className="game__btn-reset">
           reset
         </button>

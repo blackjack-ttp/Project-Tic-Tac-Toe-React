@@ -3,10 +3,10 @@ import React from 'react';
 import './style.scss';
 
 const Cell = (props) => {
-  const { value, onClick } = props;
+  const { value, onClick, className } = props;
   return (
     <>
-      <div className="game-cell" onClick={onClick}>
+      <div className={`game-cell ${className}`} onClick={onClick}>
         {value}
       </div>
     </>

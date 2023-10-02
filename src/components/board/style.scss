@@ -1,9 +1,11 @@
 .game-board {
     margin: 25px;
+    padding: 20px;
     width: 500px;
     height: 500px;
     border: 2px solid var(--theme-main-color);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    grid-gap: 25px;
 }
