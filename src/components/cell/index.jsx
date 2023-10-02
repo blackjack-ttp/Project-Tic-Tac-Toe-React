@@ -3,9 +3,12 @@ import React from 'react';
 import './style.scss';
 
 const Cell = (props) => {
+  const { value, onClick } = props;
   return (
     <>
-      <div className="game-cell">{props.value}</div>
+      <div className="game-cell" onClick={onClick}>
+        {value}
+      </div>
     </>
   );
 };

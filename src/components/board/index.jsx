@@ -3,15 +3,13 @@ import React from 'react';
 import './style.scss';
 import Cell from '@/components/cell';
 
-const Board = () => {
+const Board = (props) => {
   return (
     <>
       <div className="game-board">
-        {Array(9)
-          .fill(0)
-          .map((item, i) => (
-            <Cell key={i} />
-          ))}
+        {props.cells.map((item, i) => (
+          <Cell key={i} value={item} onClick={() => props.onClick(i)} />
+        ))}
       </div>
     </>
   );
