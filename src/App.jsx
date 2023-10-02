@@ -1,12 +1,14 @@
-import './App.scss'
+import './App.scss';
+import Game from '@/components/Game';
 
 function App() {
-
   return (
     <>
-      <h1>Welcome to page home</h1>
+      <div className="App">
+        <Game />
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
