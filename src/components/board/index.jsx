@@ -7,15 +7,11 @@ const Board = () => {
   return (
     <>
       <div className="game-board">
-        <Cell></Cell>
-        <Cell></Cell>
-        <Cell></Cell>
-        <Cell></Cell>
-        <Cell></Cell>
-        <Cell></Cell>
-        <Cell></Cell>
-        <Cell></Cell>
-        <Cell></Cell>
+        {Array(9)
+          .fill(0)
+          .map((item, i) => (
+            <Cell key={i} />
+          ))}
       </div>
     </>
   );
