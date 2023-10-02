@@ -7,8 +7,8 @@ const Board = (props) => {
   return (
     <>
       <div className="game-board">
-        {props.cells.map((item, i) => (
-          <Cell key={i} value={item} onClick={() => props.onClick(i)} />
+        {props.cells.map((item, index) => (
+          <Cell key={index} value={item} onClick={() => props.onClick(index)} />
         ))}
       </div>
     </>

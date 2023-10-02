@@ -20,6 +20,21 @@
             color: var(--theme-main-color);
             padding: 2rem;
             border: 0.5rem solid var(--theme-sub-background-color);
+            text-transform: uppercase;
+        }
+
+        &__btn-reset {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--theme-main-color);
+            padding: 2rem;
+            border: 0.5rem solid var(--theme-sub-background-color);
+            text-transform: uppercase;
+        }
+        &__btn-reset:hover {
+            color: var(--theme-sub-text-color);
+            background-color: var(--theme-background-color);
+            border: 0.5rem solid var(--theme-sub-background-color);
         }
     }
 }
